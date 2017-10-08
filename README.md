@@ -23,7 +23,7 @@ to intall all other necessary components, in the project folder run:
 ```bash
 npm install
 ```
-use the sql file file from the project to populate your mysql DB. (`myexample.sql`)
+use the sql file from the project to populate your mysql DB. (`myexample.sql`)
 
 ## Running the project
 
