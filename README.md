@@ -32,8 +32,8 @@ In the project folder:
 ```bash
 node debug.js
 ```
-open your web brouser and open http://localhost:8080
-you should see a login page - once you have populated your db (and setup the right acces to your db in `definitions/database.js`) you can login with one of these accounts and see the differences of what is accessible by each user.
+open your web browser and open http://localhost:8080
+you should see a login page - once you have populated your db (and setup the right access to your db in `definitions/database.js`) you can login with one of these accounts and see the differences of what is accessible by each user.
 
 User | Password | User type
 --- | --- | ---
