@@ -1,0 +1,63 @@
+
+@{component('errors')}
+<form method="post" action="">
+                <!-- the user name input field uses a HTML5 pattern check -->
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>*@(User email)</label>
+                                <input type="email" name="user_email" class="form-control login_input" placeholder="@(e-mail)" required />
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>*@(User email) <i class="fa fa-repeat"></i></label>
+                                <input type="email" name="user_email_repeat" class="form-control login_input" placeholder="@(repeat user e-mail)" required />
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>*@(User type)</label>
+                                <select name="user_account_type" class="form-control login_input" required>
+                                    <option value="">@(Choose type)..</option>
+                                    <option value="1">@(Admin)</option>
+                                    <option value="2">@(Super User)</option>
+                                    <option value="3">@(User)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>*@(Username)</label>
+                                <input type="text" pattern="[a-zA-Z0-9]{2,64}" name="user_name" class="form-control login_input" placeholder="lietotajvards" required />
+                                <p class="help-block">@(letters/numbers (2-64 symbols))</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>*@(Password)</label>
+                                
+                                <div class="input-group">
+                                    <div class="input-group-btn">
+                                    <button type="button" class="btn btn-primary" disabled>@(Generate)</button>
+                                    </div>
+                                    <!-- /btn-group -->
+                                    <input type="password" name="user_password" pattern=".{6,}" class="form-control login_input" required autocomplete="off" />
+                                </div>
+                                <p class="help-block">@(At least 6 symbols)</p>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="form-group">
+                                <label>*@(Repeat password) <i class="fa fa-repeat"></i></label>
+                                <input type="password" name="user_password_repeat" class="form-control login_input" pattern=".{6,}" autocomplete="off" />
+
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">@(Register)</button>
+                </form>

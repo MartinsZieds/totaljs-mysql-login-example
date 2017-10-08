@@ -1,0 +1,1 @@
+require('sqlagent/mysql').init('mysql://root:myexample@127.0.0.1/myexample', true);

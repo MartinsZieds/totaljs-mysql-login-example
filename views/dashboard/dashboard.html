@@ -1,0 +1,20 @@
+@{title('@(Something awesome)')}
+
+<div class="container">
+
+	<!-- Main component for a primary marketing message or call to action -->
+	<h1 class="text-center">@(Tototal.js mysql login example)</h1>
+	<p class="text-center">@(This example is a quick and fairly sample for a login with mysql Database and user roles.)</p>
+	<p class="text-center">@(To see user roles in action try to go to the user privilaged pages to see if you have access to them)</p>
+	<hr/>
+	<div class="row">
+		<div class="col-md-12">
+			<h4>@(Data for the view)</h4>
+			<pre>@{json(model.items)}</pre>
+			<br>
+			<h4>@(Your user session object)</h4>
+			<pre>@{json(user)}</pre>
+		</div>
+	</div>
+</div>
+<!-- /container -->

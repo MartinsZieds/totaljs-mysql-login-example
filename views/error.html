@@ -1,0 +1,25 @@
+<center>
+	<h1>@(Error) @{repository.msg}</h1>
+    @{if repository.msg === 400}
+    	<h5>@(Bad Request to the server. I'm telling you  - you sent a malformed request. )</h5>
+    @{else if repository.msg === 401}
+    	<h5>@(You are Unauthorized to view this. Returned along with appopriate header that ask the client to authenticate itself before it can gain access to the resource.)</h5>
+    @{else if repository.msg === 403}
+    	<h5>@(Forbidden to view this.  The request was refused by the server.)</h5>
+    @{else if repository.msg === 404}
+    	<h5>@(The page you're looking for does not exist)</h5>
+    @{else if repository.msg === 408}
+    	<h5>@(Your request timed out. Probably smth with the system.)</h5>
+    @{else if repository.msg === 431}
+    	<h5>@(Request Header Fields Too Large)</h5>
+    @{else if repository.msg === 500}
+    	<h5>@(Internal Server Error. The server encountered an error that prevented it from servicing the request.)</h5>
+    @{else if repository.msg === 501}
+    	<h5>@(Not Implemented. You made a request that is beyond the server's capabilities.)</h5>
+    @{else}
+	    <h5>@(Unknown error occured, error code) @{repository.msg}</h5>
+	@{fi}
+
+	<h5>@(Page not found or smth like that)</h5>
+</center>
+

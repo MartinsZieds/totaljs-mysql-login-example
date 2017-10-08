@@ -1,0 +1,13 @@
+@{if model}
+    @{if model.success === false && model.value.items}
+        @{foreach errorMessage in model.value.items}
+            <div class="alert @{helpers.alertType(errorMessage.error)} alert-dismissible" role="alert">
+			  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+			    <span aria-hidden="true">&times;</span>
+			  </button>
+			  <strong>Error</strong> @{errorMessage.name}
+			</div>
+        @{end}
+        
+    @{fi}
+@{fi}

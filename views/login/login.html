@@ -1,0 +1,12 @@
+<div class="container">
+      @{component('errors')}
+      <form class="form-signin" action="/login/" method="POST" id="f">
+        <h2 class="form-signin-heading">@(Please sign in)</h2>
+        <label for="inputEmail" class="sr-only">@(Email address)</label>
+        <input type="text" id="user_name" name="user_name" class="form-control" placeholder="@(User name)" required autofocus>
+        <label for="inputPassword" class="sr-only">@(Password)</label>
+        <input type="password" id="user_password" name="user_password"  class="form-control" placeholder="@(Password)" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">@(Sign in)</button>
+      </form>
+
+    </div> <!-- /container -->

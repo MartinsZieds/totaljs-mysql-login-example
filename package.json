@@ -1,0 +1,22 @@
+{
+  "name": "totaljs-mysql-login-example",
+  "version": "0.0.1",
+  "description": "Total.js framework login example with users from mysql and different user privilages",
+  "main": "debug.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MartinsZieds/totaljs-mysql-login-example.git"
+  },
+  "author": "Martins Zieds",
+  "license": "MIT",
+  "homepage": "https://github.com/MartinsZieds/totaljs-mysql-login-example",
+  "dependencies": {
+    "jsonwebtoken": "^7.4.3",
+    "mysql": "^2.13.0",
+    "sqlagent": "^9.9.1",
+    "total.js": "^2.8.0"
+  }
+}
