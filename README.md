@@ -41,7 +41,7 @@ demo | admindemo | admin
 demo2 | speruserdemo | super user
 demo3 | userdemo | normal user
 
-once you have looged in you can register your own users.
+once you have logged in, you can register your own users.
 
 ## Authors
 
@@ -49,7 +49,7 @@ once you have looged in you can register your own users.
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
 
-__Btw__, there are not to this particular example, so your PR's are more than welcome :)
+__Btw__, there are none to this particular example, so your PR's are more than welcome :)
 
 ## License
 
