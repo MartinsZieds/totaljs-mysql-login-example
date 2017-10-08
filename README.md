@@ -23,7 +23,7 @@ to intall all other necessary components, in the project folder run:
 ```bash
 npm install
 ```
-use the sql file file from the project to populate your mysql DB. (myexample.sql)
+use the sql file file from the project to populate your mysql DB. (`myexample.sql`)
 
 ## Running the project
 
@@ -32,13 +32,24 @@ In the project folder:
 ```bash
 node debug.js
 ```
+open your web brouser and open http://localhost:8080
+you should see a login page - once you have populated your db (and setup the right acces to your db in `definitions/database.js`) you can login with one of these accounts and see the differences of what is accessible by each user.
 
+User | Password | User type
+--- | --- | ---
+demo | admindemo | admin
+demo2 | speruserdemo | super user
+demo3 | userdemo | normal user
+
+once you have looged in you can register your own users.
 
 ## Authors
 
 * **Martins Zieds** - *Initial work of this example*
 
 See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+
+__Btw__, there are not to this particular example, so your PR's are more than welcome :)
 
 ## License
 
