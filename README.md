@@ -38,7 +38,7 @@ you should see a login page - once you have populated your db (and setup the rig
 User | Password | User type
 --- | --- | ---
 demo | admindemo | admin
-demo2 | speruserdemo | super user
+demo2 | superuserdemo | super user
 demo3 | userdemo | normal user
 
 once you have logged in, you can register your own users.
